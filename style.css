@@ -1,0 +1,19 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --font-body: "Roboto", sans-serif;
+    --font-heading: "Roboto", sans-serif;
+
+    /* Colors */
+    --kabbs-purple: #312979;
+    --kabbs-blue: #0b69b8;
+    --kabbs-blue-light: #1da9e7;
+    --kabbs-green: #c0cdad;
+    --kabbs-grey: #848c94;
+    --kabbs-black: #0e1d2d;
+    --kabbs-white: white;
+
+}
