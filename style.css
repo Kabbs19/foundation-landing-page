@@ -7,6 +7,17 @@
     --font-body: "Roboto", sans-serif;
     --font-heading: "Roboto", sans-serif;
 
+    --font-size-p: 1rem;
+    --font-size-h6: 0.875;
+    --font-size-h5: 1rem;
+    --font-size-h4: 1.25rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h1: 2.5rem;
+
+    --font-wght: thin;
+    --font
+
     /* Colors */
     --kabbs-purple: #312979;
     --kabbs-blue: #0b69b8;
@@ -56,10 +67,46 @@ body {
     color: var(--kabbs-black);
     background: var(--kabbs-white);
     -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h {
     font-family: var(--font-heading);
+}
+
+p {
+    font-size: 1rem;     
+    font-weight: 400;     
+}
+
+h6 {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 /* Media */
@@ -105,4 +152,53 @@ button {
 
 .mt-lg {
     margin-top: var(--space-lg);
+}
+
+/* Menus */
+.primary-menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background-color: var(--kabbs-black);
+    padding: var(--space-md) var(--space-xl);
+
+}
+
+.primary-menu-logo {
+    margin: var(--space-sm);
+    display: flex;
+    flex: 1;
+    height: auto;
+    max-width: 150px;
+}
+
+.site-name {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.primary-menu-items {
+    display: flex;
+    align-items: center;
+    padding-right: var(--space-xl);
+    height: auto;
+}
+
+.primary-menu-items a {
+    color: var(--kabbs-white);
+}
+
+.primary-menu-items li {
+     display: inline;
+     margin: var(--space-sm)
+}
+
+.header-name {
+    color: var(--kabbs-white);
+}
+
+.header-subname {
+    color: var(--kabbs-white);
 }
