@@ -15,9 +15,6 @@
     --font-size-h2: 2rem;
     --font-size-h1: 2.5rem;
 
-    --font-wght: thin;
-    --font
-
     /* Colors */
     --kabbs-purple: #312979;
     --kabbs-blue: #0b69b8;
@@ -131,10 +128,20 @@ a:hover {
 
 button {
     font: inherit;
+    font-weight: 700;
     border: none;
     border-radius: var(--radius-md);
     padding: var(--space-sm) var(--space-md);
     cursor: pointer;
+}
+
+.blue-button {
+    color: var(--kabbs-white);
+    background-color: var(--kabbs-blue-light);
+}
+
+.blue-button:hover {
+    background-color: var(--kabbs-blue);
 }
 
 /* Layout */
@@ -164,8 +171,9 @@ button {
 
 }
 
-.primary-menu-logo {
+.header-logo {
     margin: var(--space-sm);
+    margin-right: var(--space-lg);
     display: flex;
     flex: 1;
     height: auto;
@@ -195,10 +203,40 @@ button {
      margin: var(--space-sm)
 }
 
-.header-name {
+.header-site-name{
     color: var(--kabbs-white);
 }
 
-.header-subname {
+.header-tagline{
     color: var(--kabbs-white);
+    font-weight: 100;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--kabbs-purple);
+    padding: var(--space-xl) var(--space-xl);
+}
+
+.column-hero-content {
+    flex-flow: column wrap;
+    flex: 1 1 0;
+    align-items: center;
+    color: var(--kabbs-white);
+}
+
+.column-hero-img {
+    display: flex;
+    flex: 2 1 0;
+    padding: 0 var(--space-xl);
+}
+
+.hero-description {
+    margin: var(--space-lg) 0;
+}
+
+.column-hero-img {
+    display: flex;
+    flex: 1 1 0;
 }
