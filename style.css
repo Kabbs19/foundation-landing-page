@@ -161,6 +161,19 @@ button {
     margin-top: var(--space-lg);
 }
 
+.body-section {
+    display: contents;
+}
+
+.grid-four {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: auto auto auto auto;
+    justify-self: center;
+    align-self: center;
+
+}
+
 /* Menus */
 .primary-menu {
     display: flex;
