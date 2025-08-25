@@ -21,6 +21,7 @@
     --kabbs-blue-light: #1da9e7;
     --kabbs-green: #c0cdad;
     --kabbs-grey: #848c94;
+    --kabbs-light-grey: #f1f1f1;
     --kabbs-black: #0e1d2d;
     --kabbs-white: white;
 
@@ -165,14 +166,35 @@ button {
     display: contents;
 }
 
-.grid-four {
-    display: grid;
-    gap: var(--space-lg);
-    grid-template-columns: auto auto auto auto;
-    justify-self: center;
-    align-self: center;
-
+.pb-sm {
+    padding-bottom: var(--space-sm);
 }
+
+.pb-md {
+    padding-bottom: var(--space-md)
+}
+
+.pt-sm {
+    padding-top: var(--space-sm);
+}
+
+.pt-md {
+    padding-top: var(--space-md);
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
 
 /* Menus */
 .primary-menu {
@@ -252,4 +274,31 @@ button {
 .column-hero-img {
     display: flex;
     flex: 1 1 0;
+}
+
+.modal-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;            
+    align-items: stretch;
+    padding: var(--space-lg);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    background-color: var(--kabbs-light-grey);
+    flex: 1 1 0;
+    justify-content: space-around;
+    box-shadow: var(--shadow-sm);
+}
+
+.modal-icon {
+    height: 100px;
+    width: 100px;
+    padding: var(--space-sm);
 }
