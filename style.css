@@ -166,6 +166,75 @@ button {
     display: contents;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.quote-block {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.bg-green {
+    background-color: var(--kabbs-green);
+}
+
+.quote-content {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: right!important;
+    font-weight: bold;
+}
+
+.cta-container {
+    display: flex;
+    background-color: var(--kabbs-purple);
+    margin: var(--ma-xl);
+    border-radius: var(--radius-md);
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 3;
+}
+
+.cta-button {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.cta-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--kabbs-white);
+}
+
+.cta-description {
+    font-size: 1.5rem;
+    color: var(--kabbs-white);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--kabbs-black);
+    color: var(--kabbs-white);
+}
+
 /* Spacings */
 
 .ma-xs {
@@ -350,14 +419,6 @@ button {
 
 .pr-xl {
     padding-right: var(--space-xl);
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 }
 
 .align-stretch {
