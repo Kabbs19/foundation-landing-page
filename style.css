@@ -228,11 +228,29 @@ button {
     color: var(--kabbs-white);
 }
 
-.footer {
+footer {
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-container {
     display: flex;
     justify-content: center;
     background-color: var(--kabbs-black);
     color: var(--kabbs-white);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.align-items-center-col {
+    align-items: center;
 }
 
 /* Spacings */
